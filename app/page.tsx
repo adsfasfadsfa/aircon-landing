@@ -20,11 +20,11 @@ export default function LandingPage() {
           className="space-y-4"
         >
           {/* 핵심 2: 인증키 입력 (가장 중요!) */}
-          <input type="hidden" name="access_key" value="01549808-f857-4117-9b8b-1c103b7f1577" />
+          <input type="hidden" name="access_key" value="01549808-f857-4117-9b8b-1c103b7f1577" /> 
 
           <div className="space-y-1">
             <label className="text-xs font-bold text-gray-700">설치할 곳 주소</label>
-            {/* 핵심 3: name 속성 반드시 추가 (이 이름으로 메일이 옵니다) */}
+            {/* 핵심 3: name 속성 반드시 추가 (이 이름으로 메일이 옵니다) 수정완료 */}
             <input 
               name="address"
               className="w-full p-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 outline-none text-sm" 

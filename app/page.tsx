@@ -6,13 +6,23 @@ export default function LandingPage() {
   const [formData, setFormData] = useState({ address: '', area: '', count: '', phone: '' });
 
   return (
-    <div className="max-w-md mx-auto p-3 space-y-6 bg-white min-h-screen">
-      <header className="text-center pt-6 pb-2">
-        <h1 className="text-2xl font-extrabold text-gray-900 mb-2">30초 시스템 에어컨 견적</h1>
-        <p className="text-sm text-gray-600">상담 없이 빠르게 비용을 계산하세요.</p>
-      </header>
 
+    <div className="max-w-md mx-auto p-3 space-y-6 bg-white min-h-screen">
+      {/* 수정된 헤더 영역 */}
+      <header className="flex flex-col items-center pt-6 pb-2 space-y-3">
+        <div className="w-24 h-24 rounded-full overflow-hidden shadow-md border-2 border-gray-100">
+          <img src="/logo.png" alt="SibaDog 로고" className="w-full h-full object-cover" />
+        </div>
+        <div className="text-center">
+          <h1 className="text-2xl font-extrabold text-gray-900 mb-1">SibaDog 견적</h1>
+          <p className="text-sm text-gray-600">30초 만에 끝나는 시스템 에어컨 견적</p>
+        </div>
+      </header>
+      
+      {/* ... (아래 폼 내용은 그대로 두세요) */}
       <section className="bg-white p-5 rounded-2xl shadow-lg border border-gray-200">
+        {/* ... */}
+    
         <form 
           action="https://api.web3forms.com/submit" 
           method="POST" 
